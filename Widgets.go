@@ -551,11 +551,11 @@ func Image(texture *Texture, width, height float32) *ImageWidget {
 type ImageState struct {
 	loading bool
 	failure bool
-	texture *Texture
+	Texture *Texture
 }
 
 func (is *ImageState) Dispose() {
-	is.texture = nil
+	is.Texture = nil
 }
 
 type ImageWithFileWidget struct {
@@ -589,13 +589,13 @@ func (i *ImageWithFileWidget) Build() {
 			go func() {
 				texture, err := NewTextureFromRgba(img)
 				if err == nil {
-					Context.SetState(stateId, &ImageState{texture: texture})
+					Context.SetState(stateId, &ImageState{Texture: texture})
 				}
 			}()
 		}
 	} else {
 		imgState := state.(*ImageState)
-		widget = Image(imgState.texture, i.width, i.height)
+		widget = Image(imgState.Texture, i.width, i.height)
 	}
 
 	widget.Build()
@@ -669,7 +669,7 @@ func (i *ImageWithUrlWidget) Build() {
 				Context.SetState(stateId, &ImageState{failure: true})
 				return
 			}
-			Context.SetState(stateId, &ImageState{loading: false, texture: texture})
+			Context.SetState(stateId, &ImageState{loading: false, Texture: texture})
 		}()
 	} else {
 		imgState := state.(*ImageState)
@@ -683,7 +683,7 @@ func (i *ImageWithUrlWidget) Build() {
 			return
 		}
 
-		widget = Image(imgState.texture, i.width, i.height)
+		widget = Image(imgState.Texture, i.width, i.height)
 	}
 
 	widget.Build()
