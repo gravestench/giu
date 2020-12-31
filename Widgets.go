@@ -9,7 +9,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/AllenDang/giu/imgui"
+	"github.com/OpenDiablo2/giu/imgui"
 	resty "github.com/go-resty/resty/v2"
 )
 

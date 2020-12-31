@@ -5,7 +5,7 @@ import (
 	"image/color"
 
 	g "github.com/AllenDang/giu"
-	"github.com/AllenDang/giu/imgui"
+	"github.com/OpenDiablo2/giu/imgui"
 )
 
 func loop() {

@@ -6,7 +6,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/AllenDang/giu/imgui"
+	"github.com/OpenDiablo2/giu/imgui"
 )
 
 type ProgressIndicatorState struct {

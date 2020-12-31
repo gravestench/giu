@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	g "github.com/AllenDang/giu"
-	"github.com/AllenDang/giu/imgui"
+	g "github.com/OpenDiablo2/giu"
+	"github.com/OpenDiablo2/giu/imgui"
 )
 
 var (

@@ -1,6 +1,6 @@
 package giu
 
-import "github.com/AllenDang/giu/imgui"
+import "github.com/OpenDiablo2/giu/imgui"
 
 type MouseButton int
 

@@ -1,7 +1,7 @@
 package giu
 
 import (
-	"github.com/AllenDang/giu/imgui"
+	"github.com/OpenDiablo2/giu/imgui"
 )
 
 var (
